@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Сократика - Заполни форму</title>
+</head>
+<body>
+    <section class="logo">
+        <div class="container">
+            <div class="logo__wrapper">
+                <img src="img/logo.svg" alt="" class="logo__img">
+                <span class="logo__text">Сократика</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="container">
+            <div class="block__wrapper">
+                <div class="block__left">
+                    <img src="img/Illustration.svg" alt="" class="block__img">
+                </div>
+                <div class="block__right">
+                    <h1 class="block__title">01 Заполни форму</h1>
+                    <form action="" class="block__form">
+                        <div class="block__form-flex">
+                            <div class="block__form-left">
+                                <div class="block__form-title" id="title1">Тема Урока</div>
+                                <div class="block__form-reset">&times;</div>
+                                <input 
+                                    id="inputText"
+                                    type="text" 
+                                    class="block__form-input" 
+                                    placeholder="Напиши что-то конкретное"
+                                >
+                            </div>
+                            <div class="block__form-right">
+                                <div class="block__form-title" id="title2">Класс</div>
+                                <div class="block__form-select">
+                                    <span class="block__form-select__title">1</span>
+                                    <img src="img/arrow.svg" alt="" class="block__form-select__svg">
+                                </div> 
+                                <div class="block__form-select__menu hide">
+                                    <div class="block__form-select__flex" id="numberSelect1">
+                                        <span class="block__form-select__number"id="number1">1</span>
+                                        <span class="block__form-select__checkBox" id="checkBox1">&#10004;</span>
+                                    </div>
+                                    <div class="block__form-select__flex" id="numberSelect2">
+                                        <span class="block__form-select__number" id="number2">2</span>
+                                        <span class="block__form-select__checkBox hide" id="checkBox2">&#10004;</span>
+                                    </div>
+                                    <div class="block__form-select__flex" id="numberSelect3">
+                                        <span class="block__form-select__number" id="number3">3</span>
+                                        <span class="block__form-select__checkBox hide" id="checkBox3">&#10004;</span>
+                                    </div>
+                                    <div class="block__form-select__flex" id="numberSelect4">
+                                        <span class="block__form-select__number" id="number4">4</span>
+                                        <span class="block__form-select__checkBox hide" id="checkBox4">&#10004;</span>
+                                    </div>
+                                    <div class="block__form-select__flex" id="numberSelect5">
+                                        <span class="block__form-select__number" id="number5">5</span>
+                                        <span class="block__form-select__checkBox hide" id="checkBox5">&#10004;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__form-options">
+                            <button class="block__form-option" id="optionBtn1">Генетика</button>
+                            <button class="block__form-option" id="optionBtn2">Анатомия человека</button>
+                            <button class="block__form-option" id="optionBtn3">Вулканы</button>
+                            <button class="block__form-option" id="optionBtn4">Зимние виды спорта</button>
+                            <button class="block__form-option" id="optionBtn5">Радуга</button>
+                            <button class="block__form-option" id="optionBtn6">Индийская культура</button>
+                            <button class="block__form-option hide" id="optionBtn7">Радуга</button>
+                            <button class="block__form-option hide" id="optionBtn8">Пеший туризм</button>
+                            <button class="block__form-option hide" id="optionBtn9">Философия</button>
+                            <button class="block__form-option hide" id="optionBtn10">Вселенная</button>
+                            <button class="block__form-option hide" id="optionBtn11">Здоровые привычки</button>
+                            <button class="block__form-option hide" id="optionBtn12">Бабочки</button>
+                            <button class="block__form-option hide" id="optionBtn13">Белые медведи</button>
+                            <button class="block__form-option hide" id="optionBtn14">Экономика</button>
+                            <button class="block__form-option hide" id="optionBtn15">Финансовая грамотность</button>
+                            <button class="block__form-option hide" id="optionBtn16">Фотосинтез</button>
+                        </div>
+                        <div class="block__form-addOptions">
+                            <span>+</span>
+                            Показать больше вариантов
+                        </div>
+                        <div class="block__form-textarea">
+                            <div class="block__form-title" id="title3">Цель урока</div>
+                            <textarea name="" placeholder="Напиши свою учебную цель" id="textarea"></textarea>
+                            <div class="block__form-counter">
+                                <span id="counter">0</span>
+                                <span>/</span>
+                                <span>200</span>
+                            </div>
+                            <div class="block__form-textError">Слишком длинный текст</div>
+                        </div>
+                        <div class="block__form-buttons">
+                            <input type="button" value="Назад" class="block__form-btn">
+                            <input type="submit" value="Следующий шаг" class="block__form-btn btnGray" id="submitBtn">
+                            <span id="textError">Данные не заполнены</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal__content"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
